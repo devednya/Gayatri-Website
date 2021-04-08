@@ -1,0 +1,154 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+body {
+    background: #1B5865;
+    font-family: 'Syne';
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.intro {
+    /* height: 100vh; */
+    margin: 4rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    /* width: 100%; */
+}
+
+.image {
+    position: relative;
+    z-index: 1;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: stretch; */
+}
+
+.container {
+    margin: auto auto;
+    max-width: 90%;
+}
+
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.875em;
+    color: #199F97;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5em;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.content {
+    max-width: 300px;
+    margin-left: 4rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #1B5865;
+    font-weight: 900;
+    background-color: #FFFFFF;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+}
+
+.background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: ;
+}
+
+.top_left_ellips {
+    position: absolute;
+    width: 334px;
+    height: 334px;
+    left: -73px;
+    top: -88px;
+    background: #E1BE9F;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.top_left_ellips::after {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: -73px;
+    top: -88px;
+    z-index: 2;
+    background: #E1BE9F;
+    filter: blur(31px);
+}
+
+.top_right_ellipse {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: 90vw;
+    top: 10vh;
+    background: #E1BE9F;
+    border-radius: 50%;
+}
+
+.bottom_left_ellipse {
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    left: 70vw;
+    top: 80vh;
+    background: #E1BE9F;
+    border-radius: 50%;
+}
+
+.radius_1 {
+    position: absolute;
+    width: 1145px;
+    height: 1145px;
+    left: -312px;
+    top: 388px;
+    border: 1px solid #E1BE9F;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.radius_2 {
+    position: absolute;
+    width: 1144px;
+    height: 1145px;
+    left: 743px;
+    top: -572px;
+    border: 1px solid #E1BE9F;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
